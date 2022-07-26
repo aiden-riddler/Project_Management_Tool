@@ -1,0 +1,547 @@
+html, body {
+    background-color: #f5f6fa;
+    padding: 5px;
+    height: 100%;
+    min-width: 950px;
+    color: #273c75;
+}
+
+.side-bar {
+    width: 20%;
+    background-color: #273c75;
+    padding: 70px 0;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.container-bg{
+    border-radius: 15px;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+}
+
+.dialog-holder{
+    position: absolute;
+    overflow: auto;
+}
+
+.course-holder{
+    background-color: #f5f6fa;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    margin: 10px;
+}
+
+.courses-div{
+    flex-wrap: wrap;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.launch-dialog{
+    opacity: 0.5;
+}
+
+.middle-container{
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#component-holder {
+    padding: 20px;
+}
+
+.nav-ul {
+    list-style-type: none;
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+}
+
+
+@media screen and (max-width: 1200px){
+    .side-bar{
+        width: 30%;
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-min-width {
+    max-width: 300px;
+}
+
+.study-hrs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group {
+    margin-top: 50px;
+}
+
+.study-hr {
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #f5f6fa;
+    color: #273c75;
+}
+
+.study-hr:hover {
+    background-color: #4c5e8f;
+    color: white;
+}
+
+.dialog {
+    background-color: white;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+
+.schedule-dialog{
+    background-color: white;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+
+.dialog-title{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.dialog-message {
+    color: #696969;
+    margin: 10px;
+}
+
+.dialog-center{
+    padding: 20px;
+}
+
+.buttons-holder {
+    display: flex;
+}
+
+.buttons-holder button{
+    color: green;
+    margin-right: 10px;
+}
+
+.second-bar{
+    display: flex;
+    position: relative;
+}
+
+.tasks-bar{
+    display: flex;
+    background-color: #DADCE0;
+    min-width: 850px;
+}
+
+.day-row-bar {
+    min-width: 800px;
+}
+
+.daily-tasks-bar {
+    -ms-flex: 1; 
+    flex: 1;
+    border-right: 1px solid #DADCE0;
+    /* margin-right: 2px; */
+}
+.task-hr-bar{
+    background-color: #fff;
+    height: 40px;
+    margin-bottom: 1px;
+}
+
+.task-hr-bar:hover {
+    cursor: pointer;
+}
+
+.task-holder {
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 2px;
+    border: 1px solid green;
+}
+
+.calendar-bar {
+    height: 300px;
+    width: 350px;
+}
+
+.cb {
+    width: 350px; 
+}
+
+.time-bar{
+    width: 75px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.day-num {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    color: #273c75;
+}
+
+.day-of-week {
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    margin-right: 5px;
+    border-radius: 50%;
+    color: #273c75;
+    font-size: 12px;
+}
+
+.today {
+    background-color: #273c75;
+    color: white;
+}
+
+.prev-month {
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    margin-right: 5px;
+    border-radius: 50%;
+    color: #86a3f5;
+    font-size: 12px;
+}
+
+.week {
+    text-align: center;
+    padding: 5px;
+    display: flex;
+}
+
+.day-of-week:hover{
+    background-color: #f5f6fa;
+    color: #4c5e8f;
+}
+
+.next-prev {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    padding: 2px;
+    color: #273c75;
+    font-size: 18px; 
+}
+
+.next-prev:hover{
+    background-color: #f5f6fa;
+    color: #4c5e8f;
+}
+
+.calendar-title-holder {
+    display: flex;
+}
+
+.date-text {
+    padding: 5px;
+    flex-grow: 2;
+}
+
+.new-course-btn-holder{
+    flex-grow: 1;
+}
+
+.float-right{
+    float: right;
+}
+
+.new-course-btn{
+    margin-right: 50px;
+    background-color:  #4c5e8f;
+    color: white;
+}
+
+.new-course-btn:hover {
+    background-color: #f5f6fa;
+    color: #4c5e8f;
+}
+
+.arrows-div {
+    display: flex;
+    flex-grow: 1;
+}
+
+.day-num:hover {
+    background-color: #f5f6fa;
+    color: #4c5e8f;
+}
+
+.day-name {
+    font-size: 12px;
+}
+
+.day-col {
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+  }
+
+.day-bar-holder{
+    display: flex;
+}
+
+.day-bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 57px;
+    height: 100px;
+}
+
+.time-bar{
+    margin-top: 30px;
+}
+
+.hr-bar {
+    height: 40px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.time-bar-text {
+    font-size: 12px;
+}
+
+.error {
+    color: red;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #E7E9EB; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #BDC1C6; 
+  }
+
+
+
+
+
+  /* Schedule dialog config */
+
+.flexed-div {
+    display: flex;
+}
+
+.top-buttons-div {
+    flex-grow: 1;
+    flex-direction: row-reverse;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px;
+    filter: brightness(0) saturate(100%) invert(22%) sepia(34%) saturate(1476%) hue-rotate(191deg) brightness(88%) contrast(95%);
+}
+
+.icon-warn-hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.icon-done-clicked {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(1997%) hue-rotate(96deg) brightness(100%) contrast(102%);
+}
+
+.icon-edit-hover {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(1997%) hue-rotate(96deg) brightness(100%) contrast(102%);
+}
+
+.info-bar {
+    color: white;
+    background-color: #6276b3;
+    border-radius: 5px;
+    padding: 4px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.position-abs{
+    position: absolute;
+}
+
+.icon-ctrl-divs{
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px;
+    z-index: 1;
+}
+
+.start-end-margin {
+    margin-right: 10px;
+}
+
+.clock-bar{
+    position: absolute;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clock-div{
+    flex-grow: 1;
+    flex-basis: 15px;
+}
+
+.clock-group {
+    display: flex;
+}
+
+.clock-center-group {
+    margin-left: 2px;
+}
+
+.clock-time-bar-left{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33px;
+    margin-right: 2px;
+}
+
+.clock-time-bar-right{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33px;
+    margin-left: 2px;
+}
+
+.colon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clock-amPm{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 5px;
+    color: #273c75;
+    font-size: 12px;
+}
+
+.clock-btn {
+    color: #273c75;
+    font-size: 12px;
+}
+
+.clock-amPm:hover{
+    background-color: #f5f6fa;
+    color: #4c5e8f;
+}
+
+.clock-btn:hover{
+    color: green;
+}
+
+.time-btn {
+    color: green;
+}
+
+.time-btn:hover {
+    background-color: #f5f6fa;
+}
+
+.time-group {
+    flex-grow: 1;
+    display: flex;
+    margin-top: 10px;
+}
+
+.time-group-label {
+    margin-top: 6px;
+}
+
+#taskname {
+    width: 215px;
+    margin-left: 10px;
+    color: green;
+}
+
+.dateG {
+    margin-top: 10px;
+}
+
+.current-date {
+    color: green;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.schedule-dialog-btn {
+    color: green;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.schedule-dialog-btn:hover{
+    background-color: #f5f6fa;
+}
+
+
+.ctrl-second-bar{
+    max-height: 750px;
+    overflow: auto;
+}
